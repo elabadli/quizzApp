@@ -1,0 +1,31 @@
+<!--
+  Generated template for the OptionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>options</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="wrapper">
+    <button ion-button large id="title_button">{{buttons[0].title}}</button>
+    <button ion-button (click)="changeOption(buttons[0].options, {indexCurrentLevel:index.indexCurrentLevel})" id="option_button">{{buttons[0].options[index.indexCurrentLevel]}}</button>
+  </div>
+  <div class="wrapper">
+    <button ion-button large id="title_button">{{buttons[1].title}}</button>
+    <button ion-button (click)="changeOption(buttons[1].options, {indexCurrentTheme:index.indexCurrentTheme})" id="option_button">{{buttons[1].options[index.indexCurrentTheme]}}</button>
+  </div>
+  <div class="wrapper">
+    <button ion-button large id="title_button">{{buttons[2].title}}</button>
+    <button ion-button (click)="changeOption(buttons[2].options, {indexCurrentEffect:index.indexCurrentEffect})" id="option_button">{{buttons[2].options[index.indexCurrentEffect]}}</button>
+  </div>
+
+</ion-content>
+
